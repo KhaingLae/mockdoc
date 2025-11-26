@@ -1,7 +1,3 @@
    {
-     "builds": [{ "src": "mockdocs/**", "use": "@vercel/static" }],
-     "routes": [
-       { "src": "/mockdocs/(.*)", "dest": "/mockdocs/$1" },
-       { "src": "/(doc\\d+\\.docx)", "dest": "/mockdocs/$1" }
-     ]
+     "builds": [{ "src": "**/*", "use": "@vercel/static" }]
    }
